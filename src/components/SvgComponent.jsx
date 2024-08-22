@@ -1,7 +1,5 @@
-/* eslint-disable react/prop-types */
 import { motion } from "framer-motion";
 import { useState } from "react";
-// eslint-disable-next-line react/prop-types
 export default function SvgComponent({selectedState, setSelectedState,transformCoor,setTransformCoor}) {
     const [isHover, setIsHover] = useState(false);
     const handleMouseEnter = () => {
