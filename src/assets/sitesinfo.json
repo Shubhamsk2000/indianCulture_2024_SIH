@@ -1,0 +1,101 @@
+{
+    "states": [
+      {
+        "name": "Maharashtra",
+        "cultural_sites": [
+          {
+            "name": "Ajanta Caves",
+            "location": "Aurangabad",
+            "description": "A UNESCO World Heritage Site, the Ajanta Caves are rock-cut Buddhist cave monuments dating from the 2nd century BCE to about 480 CE."
+          },
+          {
+            "name": "Ellora Caves",
+            "location": "Aurangabad",
+            "description": "The Ellora Caves are one of the largest rock-cut monastery-temple cave complexes in the world, featuring artwork dating from the 600-1000 CE period."
+          },
+          {
+            "name": "Gateway of India",
+            "location": "Mumbai",
+            "description": "A monumental arch built in the early 20th century in Mumbai, it is a symbol of the city and one of its most famous landmarks."
+          },
+          {
+            "name": "Shaniwar Wada",
+            "location": "Pune",
+            "description": "A historical fortification in the city of Pune, built in 1732, it was the seat of the Peshwas of the Maratha Empire until 1818."
+          }
+        ]
+      },
+      {
+        "name": "Uttar_Pradesh",
+        "cultural_sites": [
+          {
+            "name": "Ram Mandir",
+            "location": "Ayodhya",
+            "description": "The Ram Mandir, also known as the Ram Temple, is a significant Hindu temple dedicated to Lord Ram, located in Ayodhya. It is a major site of pilgrimage and cultural importance."
+          },
+          {
+            "name": "Taj Mahal",
+            "location": "Agra",
+            "description": "One of the Seven Wonders of the World, the Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river, built by Mughal emperor Shah Jahan in memory of his wife Mumtaz Mahal."
+          },
+          {
+            "name": "Varanasi Ghats",
+            "location": "Varanasi",
+            "description": "The Ghats of Varanasi are riverfront steps leading to the banks of the River Ganges. They are known for their spiritual significance and religious rituals."
+          },
+          {
+            "name": "Fatehpur Sikri",
+            "location": "Agra",
+            "description": "A UNESCO World Heritage Site, Fatehpur Sikri is a city founded by Emperor Akbar in 1571, which served as the capital of the Mughal Empire for a short period."
+          },
+          {
+            "name": "Lucknow Residency",
+            "location": "Lucknow",
+            "description": "The British Residency is a group of several buildings in a common precinct, the site of a dramatic event during the Indian Rebellion of 1857."
+          }
+        ]
+      },
+      {
+        "name": "Jammu_and_Kashmir_disp",
+        "cultural_sites": [
+          {
+            "name": "Shankaracharya Temple",
+            "location": "Srinagar",
+            "description": "An ancient Hindu temple dedicated to Lord Shiva, situated on Shankaracharya Hill overlooking the city of Srinagar. It offers panoramic views of the Kashmir Valley."
+          },
+          {
+            "name": "Mughal Gardens",
+            "location": "Srinagar",
+            "description": "A collection of beautiful gardens built during the Mughal era, including Shalimar Bagh, Nishat Bagh, and Chashme Shahi. These gardens are renowned for their exquisite layout and floral displays."
+          },
+          {
+            "name": "Jammu Fort",
+            "location": "Jammu",
+            "description": "A historical fort located in the city of Jammu. It served as the residence of the Dogra rulers and features intricate architectural details and panoramic views of the surrounding area."
+          },
+          {
+            "name": "Vaishno Devi Temple",
+            "location": "Katra",
+            "description": "A highly revered Hindu temple dedicated to Goddess Vaishno Devi. It is one of the most visited pilgrimage sites in India, situated on the Trikuta Mountains."
+          },
+          {
+            "name": "Dal Lake",
+            "location": "Srinagar",
+            "description": "A large, picturesque lake in Srinagar famous for its houseboats and shikaras (traditional wooden boats). The lake is surrounded by stunning gardens and the Himalayan mountains."
+          },
+          {
+            "name": "Hemis Monastery",
+            "location": "Hemis",
+            "description": "One of the largest and wealthiest Buddhist monasteries in Ladakh, known for its annual Hemis festival and impressive collection of Buddhist artifacts and artworks."
+          },
+          {
+            "name": "Lal Chowk",
+            "location": "Srinagar",
+            "description": "A prominent commercial and cultural center in Srinagar. It is known for its vibrant atmosphere, shops, and historical significance."
+          }
+        ]
+      }
+    ]
+  }
+
+  
