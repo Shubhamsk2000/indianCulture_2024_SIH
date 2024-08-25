@@ -41,13 +41,39 @@ const navlink_animation = {
 const Links = [
   { name: "Home", href: "/" },
   { name: "Map", href: "/map" },
-  { name: "Services", href: "/services" },
+  { name: "Art Forms", href: "/art-forms" },
   { name: "Contact", href: "/contact" },
 ];
 
 const NavigationBar = ({ mode }) => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
+
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(100);
+
+  const handleScroll = () => {
+    const currentScrollY = window.scrollY;
+    console.log(currentScrollY, lastScrollY);
+    // Show navbar when scrolling up and hide when scrolling down
+    if (currentScrollY > lastScrollY) {
+      setShowNavbar(false); // Scrolling down
+    } else {
+      setShowNavbar(true); // Scrolling up
+    }
+
+    // Update last scroll position
+    if(currentScrollY > 100) {
+      setLastScrollY(currentScrollY);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [lastScrollY]);
 
   useEffect(() => {
     // Reset isOpen state whenever the route changes
@@ -57,7 +83,7 @@ const NavigationBar = ({ mode }) => {
   return (
     <>
       {mode === "full-width" ? (
-        <nav className="navbar">
+       <nav className={`navbar ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`}>
           <div className="logo">
             <h1>MyLogo</h1>
           </div>

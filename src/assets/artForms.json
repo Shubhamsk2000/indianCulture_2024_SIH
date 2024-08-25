@@ -3,8 +3,8 @@
     {
       "name": "Madhubani Paintings",
       "description": "A vibrant folk art from Bihar, known for its intricate patterns and mythological themes.",
-      "image": "/madhubani.webp",
-      "link": "/madhubani",
+      "image": "/Madhubani_Paintings.jpg",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Bihar",
         "practiced_in": [
@@ -17,7 +17,7 @@
       "name": "Pattachitra",
       "description": "A traditional cloth-based scroll painting from Odisha and West Bengal, known for its intricate details and mythological narratives.",
       "image": "/Pattachitra.jpeg",
-      "link": "/pattachitra",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Odisha",
         "practiced_in": [
@@ -30,7 +30,7 @@
       "name": "Warli Paintings",
       "description": "A tribal art form from Maharashtra, Warli paintings depict daily life and nature using simple geometric shapes.",
       "image": "/madhubani.webp",
-      "link": "/warli",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Maharashtra",
         "practiced_in": [
@@ -42,7 +42,7 @@
       "name": "Kalamkari",
       "description": "A hand-painted or block-printed textile from Andhra Pradesh, featuring intricate designs and natural dyes.",
       "image": "/madhubani.webp",
-      "link": "/kalamkari",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Andhra Pradesh",
         "practiced_in": [
@@ -55,7 +55,7 @@
       "name": "Tanjore Paintings",
       "description": "A classical South Indian painting style from Tamil Nadu, known for its rich colors, surface richness, and compact composition.",
       "image": "/madhubani.webp",
-      "link": "/tanjore",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Tamil Nadu",
         "practiced_in": [
@@ -67,7 +67,7 @@
       "name": "Phad Paintings",
       "description": "A religious scroll painting from Rajasthan, known for its vibrant colors and depiction of epic stories.",
       "image": "/madhubani.webp",
-      "link": "/phad",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Rajasthan",
         "practiced_in": [
@@ -79,7 +79,7 @@
       "name": "Miniature Paintings",
       "description": "A detailed and colorful style of painting from Rajasthan and Mughal courts, often illustrating manuscripts and royal chronicles.",
       "image": "/madhubani.webp",
-      "link": "/miniature",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Rajasthan",
         "practiced_in": [
@@ -92,7 +92,7 @@
       "name": "Gond Art",
       "description": "A tribal art form from Madhya Pradesh, characterized by its vibrant colors and intricate patterns inspired by nature.",
       "image": "/madhubani.webp",
-      "link": "/gond",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Madhya Pradesh",
         "practiced_in": [
@@ -105,7 +105,7 @@
       "name": "Cheriyal Scroll Paintings",
       "description": "A stylized version of Nakashi art, practiced in Telangana, which involves creating scrolls that narrate stories from mythology and folklore.",
       "image": "/madhubani.webp",
-      "link": "/cheriyal",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Telangana",
         "practiced_in": [
@@ -117,7 +117,7 @@
       "name": "Ajrakh Block Printing",
       "description": "A form of resist dyeing and block printing that is still practiced in Gujarat and Rajasthan, known for its intricate patterns and rich colors.",
       "image": "/madhubani.webp",
-      "link": "/ajrakh",
+      "link": "/Madhubani_Paintings.jpg",
       "states": {
         "origin": "Gujarat",
         "practiced_in": [

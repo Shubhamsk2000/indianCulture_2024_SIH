@@ -13,7 +13,9 @@
     margin-top: 21rem;
     color: #602424;
 }
-
+.heading{
+    animation: fadeInUp 1.5s ease-in-out;
+}
 .heading h3 {
     margin: 0;
     font-size: 4rem; 
@@ -67,7 +69,7 @@
     background: linear-gradient(to right, #c4474b, #e56961);
     color: white;
     font-weight: 600;
-   
+    animation: fadeInUp 1.5s ease-in-out;
 }
 .chatbot{
     background: linear-gradient(to right, #c4474b, #e56961);
@@ -77,12 +79,7 @@
     bottom: 3rem;
     right: 3rem;
 }
-.chatbot a{
-    text-decoration: none;
-    color: white;
-    font-weight: 700;
-    font-size: 20px;
-}
+
 .explore-btn:hover{
     box-shadow:
     0px 0px 3.8px rgba(0, 0, 0, 0.066),
@@ -102,3 +99,29 @@
     height: 3rem;
     z-index: -1;
 } */
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(40px);
+      scale: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+      scale: 1;
+    }
+  }
+
+  .state-tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    pointer-events: none;
+    white-space: nowrap;
+    z-index: 1000;
+    font-size: 15px;
+  }
+
+

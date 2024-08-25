@@ -1,7 +1,8 @@
 import '../css/home.css'
 import Transition from '../Transition'
 import ArtStyle from './ArtStyle';
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
+import Chatbot from './Chatbot';
 function Home() {
     return (
         <Transition>
@@ -19,15 +20,14 @@ function Home() {
                     </NavLink>
                 </div>
                 <div className="green-div"></div>
-                <div className="chatbot">
-                    <Link to={'/chatbot'}>
-                        Chat
-                    </Link>
+                <div className="">
+                    <Chatbot/>
                 </div>
             </div>
-            <section style={{height:"100vh"}}>
+            <section style={{ border:"2px solid red"}}>
                 <ArtStyle/>
             </section>
+          
         </Transition>
 
     )

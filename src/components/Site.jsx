@@ -2,7 +2,7 @@
 function Site() {
   return (
     <div className="site-info">
-      <h1>ithe site info yenar</h1>   
+      <h1></h1>   
     </div>
   )
 }
