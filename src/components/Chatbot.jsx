@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import { motion } from 'framer-motion';
-
+import '../css/Chat.css';
 function Chatbot() {
   const [query, setQuery] = useState('');
   const [messages, setMessages] = useState([]);
@@ -30,6 +30,7 @@ function Chatbot() {
       } catch (error) {
         // Handle error if API request fails
         setMessages([...messages, { type: 'user', text: query }, { type: 'bot', text: 'Sorry, something went wrong. Please try again.' }]);
+        console.log(error.message);
       }
     }
   }
