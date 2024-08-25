@@ -1,5 +1,5 @@
 import '../css/navigation.css';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 
@@ -45,12 +45,14 @@ const NavigationBar = () => {
       <nav className={`navbar ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`}>
         <div className='navbar-div'>
           <div className="logo">
+            <Link to="/">
             <img 
               style={{
                 width: "70px",
                
               }}
             src="/ti.png" alt="" />
+            </Link>
           </div>
           <ul className="nav-links">
             {
