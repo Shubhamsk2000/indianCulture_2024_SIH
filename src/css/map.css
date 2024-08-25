@@ -44,9 +44,7 @@
     padding: 20px;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
 }
-.state{
-    fill: #FF931E;
-}
+
 .selected-state{
     fill: #f88101;
     stroke: white;

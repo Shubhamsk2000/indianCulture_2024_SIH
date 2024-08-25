@@ -77,6 +77,8 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                         className={`state ${selectedState === "Jammu_and_Kashmir_disp" ? "selected-state" : ""}`}
                         onClick={() => handleStateClicke("Jammu_and_Kashmir_disp")}
                         fillOpacity={1}
+                       fill="#d1dbdd"
+
                         stroke="#000"
                         strokeDasharray="none"
                         strokeDashoffset={0}
@@ -103,7 +105,7 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                 onMouseLeave={handleMouseLeave}>
                     <path
                         id="Ladakh_disp"
-                        fill="#FF931E"
+                         fill="#d1dbdd"
                         fillOpacity={1}
                         stroke="#000"
                         strokeDasharray="none"
@@ -2105,6 +2107,7 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                         className={`state ${selectedState === "Maharashtra" ? "selected-state" : ""}`}
                         fillOpacity={1}
                         stroke="#000"
+                        fill="#d1dbdd"
                         strokeDasharray="none"
                         strokeDashoffset={0}
                         strokeLinecap="butt"
