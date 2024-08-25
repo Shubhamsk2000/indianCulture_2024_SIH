@@ -47,10 +47,10 @@ const NavigationBar = () => {
           <div className="logo">
             <img 
               style={{
-                width: "50px",
+                width: "70px",
                
               }}
-            src="/logo.png" alt="" />
+            src="/ti.png" alt="" />
           </div>
           <ul className="nav-links">
             {
