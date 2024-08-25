@@ -99,7 +99,7 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                 onMouseLeave={handleMouseLeave}
 
                 <g id="Ladakh_disp_group" 
-                onMouseEnter={() => handleMouseEnter('Ladakh_disp_group')}
+                onMouseEnter={() => handleMouseEnter('Ladakh')}
                 onMouseLeave={handleMouseLeave}>
                     <path
                         id="Ladakh_disp"
