@@ -5,7 +5,12 @@ import { Link } from 'react-router-dom';
 import '../css/map.css'
 import Transition from '../Transition';
 import { motion } from 'framer-motion';
+
+
+
+
 function Map() {
+  
 
   const [selectedState, setSelectedState] = useState(null);
   const [transformCoor, setTransformCoor] = useState({ scale: 1, translateX: 0, translateY: 0 });
@@ -40,6 +45,7 @@ function Map() {
           selectedState && (
             <>
               <div className="sites-container">
+
                 <div className="site-list">
                   <h1>Cultural Sites in <br />{selectedState}</h1>
                   <ul>
@@ -53,9 +59,18 @@ function Map() {
                             variants={listVariants}
                             whileHover={{ scale: 1.05, boxShadow: '0 10px 20px rgba(0, 0, 0, 0.2)' }}
                             className="site">
+                            <div
+                              style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", marginBottom: "10px" }}
+                            >
 
-                            <h2>{site.name}</h2>
-                            <p>Location : {site.location}</p>
+                              <img
+                                src={site.image}
+                                alt={site.name}
+                                style={{ width: '150px', height: '100px', marginRight: '20px', borderRadius: '8px', objectFit: 'cover', }}
+                              />
+                              <h2>{site.name}</h2>
+                            </div>
+                            <p>Location :<b> {site.location} </b></p>
                             <p>{site.description}</p>
 
                           </motion.div>
@@ -64,7 +79,7 @@ function Map() {
                     }
                   </ul>
                 </div>
-             
+
               </div>
               <div className="close-btn">
                 <button
@@ -83,6 +98,7 @@ function Map() {
         }
         <SvgComponent selectedState={selectedState} setSelectedState={setSelectedState} transformCoor={transformCoor} setTransformCoor={setTransformCoor} />
       </div>
+      
     </Transition>
   )
 }

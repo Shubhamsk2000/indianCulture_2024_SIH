@@ -1,69 +1,33 @@
 import '../css/navigation.css';
-import { NavLink, Link, useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import { Button } from './index';
-import { motion, AnimatePresence } from 'framer-motion';
 
-const variant = {
-  open: {
-    width: 440,
-    height: 500,
-    top: "-10px",
-    right: "-10px",
-    transition: { duration: 0.75, type: "tween", ease: [0.76, 0, 0.24, 1]}
-  },
-  closed: {
-    width: "100px",
-    height: "40px",
-    top: "0",
-    right: "0",
-    transition: { duration: 0.75, delay: 0.35, type: "tween", ease: [0.76, 0, 0.24, 1]}
-  },
-};
 
-const navlink_animation = {
-  initial: {
-    opacity: 0,
-    rotateX: 90,
-  },
-  enter: (index) => ({
-    opacity: 1,
-    rotateX: 0,
-    transition: {
-      delay: 0.5 + index * 0.1,
-    },
-  }),
-  exit: {
-    opacity: 0,
-  },
-};
+
 
 const Links = [
   { name: "Home", href: "/" },
   { name: "Map", href: "/map" },
-  { name: "Art Forms", href: "/art-forms" },
-  { name: "Contact", href: "/contact" },
+  { name: "Translation", href: "/translation" },
+  { name: "Calender", href: "/calender" },
 ];
 
-const NavigationBar = ({ mode }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const NavigationBar = () => {
   const location = useLocation();
 
+  console.log(location.pathname)
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(100);
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    console.log(currentScrollY, lastScrollY);
-    // Show navbar when scrolling up and hide when scrolling down
     if (currentScrollY > lastScrollY) {
-      setShowNavbar(false); // Scrolling down
+      setShowNavbar(false);
     } else {
-      setShowNavbar(true); // Scrolling up
+      setShowNavbar(true);
     }
 
-    // Update last scroll position
-    if(currentScrollY > 100) {
+    if (currentScrollY > 100) {
       setLastScrollY(currentScrollY);
     }
   };
@@ -75,19 +39,33 @@ const NavigationBar = ({ mode }) => {
     };
   }, [lastScrollY]);
 
-  useEffect(() => {
-    // Reset isOpen state whenever the route changes
-    setIsOpen(false);
-  }, [location]);
 
   return (
     <>
-      {mode === "full-width" ? (
-       <nav className={`navbar ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`}>
+      <nav className={`navbar ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`}>
+        <div className='navbar-div'>
           <div className="logo">
             <h1>MyLogo</h1>
           </div>
           <ul className="nav-links">
+            {
+              Links.map((link, index) => (
+                <li key={index}>
+                  <NavLink to={link.href}>{link.name}</NavLink>
+                </li>
+              ))
+            }
+          </ul>
+        </div>
+
+        {
+          location.pathname === "/map" ? 
+          <div className='search-bar'>
+            <input type="text" />
+          </div> 
+          : null
+        }
+        {/* <ul className="nav-links">
             <li>
               <NavLink to="/">Home</NavLink>
             </li>
@@ -100,13 +78,10 @@ const NavigationBar = ({ mode }) => {
             <li>
               <NavLink to="/contact">Contact</NavLink>
             </li>
-          </ul>
-        </nav>
-      ) : (
-        <nav className="navbar-half">
-          {/* <div className="logo navbar-half-left">
-            <h1>MyLogo</h1>
-          </div> */}
+          </ul> */}
+      </nav>
+      {/* <nav className="navbar-half">
+          
           <div className="navbar-half-right">
             <motion.div
               className="menu"
@@ -138,8 +113,7 @@ const NavigationBar = ({ mode }) => {
               setIsOpen={setIsOpen}
             />
           </div>
-        </nav>
-      )}
+        </nav> */}
     </>
   );
 };

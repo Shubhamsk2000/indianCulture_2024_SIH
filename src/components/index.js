@@ -4,6 +4,7 @@ import Map from './Map'
 import Site from './Site';
 import ArtStyle from './ArtStyle';
 import Button, { ButtonText } from './Button';
+import Translation from './Translation';
 
 export default Home;
 export {
@@ -13,5 +14,6 @@ export {
     ArtStyle,
     Button,
     ButtonText,
+    Translation,
     
 }

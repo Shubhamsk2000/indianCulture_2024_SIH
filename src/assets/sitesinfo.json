@@ -6,22 +6,27 @@
           {
             "name": "Ajanta Caves",
             "location": "Aurangabad",
-            "description": "A UNESCO World Heritage Site, the Ajanta Caves are rock-cut Buddhist cave monuments dating from the 2nd century BCE to about 480 CE."
+            "description": "A UNESCO World Heritage Site, the Ajanta Caves are rock-cut Buddhist cave monuments dating from the 2nd century BCE to about 480 CE.",
+            "image":"/Ajanta_Caves.jpg"
           },
           {
             "name": "Ellora Caves",
             "location": "Aurangabad",
-            "description": "The Ellora Caves are one of the largest rock-cut monastery-temple cave complexes in the world, featuring artwork dating from the 600-1000 CE period."
+            "description": "The Ellora Caves are one of the largest rock-cut monastery-temple cave complexes in the world, featuring artwork dating from the 600-1000 CE period.",
+            "image":"/Ellora Caves.jpg"
+           
           },
           {
             "name": "Gateway of India",
             "location": "Mumbai",
-            "description": "A monumental arch built in the early 20th century in Mumbai, it is a symbol of the city and one of its most famous landmarks."
+            "description": "A monumental arch built in the early 20th century in Mumbai, it is a symbol of the city and one of its most famous landmarks.",
+            "image":"/Gateway of India.jpeg"
           },
           {
             "name": "Shaniwar Wada",
             "location": "Pune",
-            "description": "A historical fortification in the city of Pune, built in 1732, it was the seat of the Peshwas of the Maratha Empire until 1818."
+            "description": "A historical fortification in the city of Pune, built in 1732, it was the seat of the Peshwas of the Maratha Empire until 1818.",
+             "image":"/Shaniwar Wada.jpeg"
           }
         ]
       },

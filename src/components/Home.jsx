@@ -24,7 +24,7 @@ function Home() {
                     <Chatbot/>
                 </div>
             </div>
-            <section style={{ border:"2px solid red"}}>
+            <section >
                 <ArtStyle/>
             </section>
           

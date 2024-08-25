@@ -1,12 +1,17 @@
 /* Chat button styling */
 .chatbot-button {
     position: fixed;
-    bottom: 3rem;
-    right: 3rem;
+    bottom: 2rem;
+    right: 2.5rem;
     background-color: #c4474b;
     color: white;
-    padding: 0.75rem 1.5rem;
-    border-radius: 1.5rem;
+    /* padding: 0.75rem; */
+   width:3.3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s;
@@ -22,15 +27,17 @@
     padding: 1.5rem 1rem;
     border-radius: 1rem;
     position: fixed;
-    bottom: 8rem;
-    right: 3rem;
-    width: 400px; /* Increased width */
-    max-height: 500px; /* Added max height */
+    bottom: 6rem;
+    right: 2.6rem;
+    width: 500px;
+    height: 550px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     flex-direction: column;
+
   }
+  
   
   .chatbot h1 {
     font-size: 1.25rem;
@@ -41,28 +48,72 @@
   /* Chat window styling */
   .chat-window {
     flex-grow: 1;
-    overflow-y: auto; /* Enabled scrolling */
+    overflow-y: auto; 
     margin-bottom: 1rem;
+    padding-right: 1rem; 
+    display: flex;
+    flex-direction: column;
   }
   
+  .chat-window::-webkit-scrollbar {
+   width: 10px;
+  }
+  /* Chat bubble styling */
   .chat-bubble {
     padding: 0.5rem;
     border-radius: 10px;
     margin-bottom: 0.5rem;
     max-width: 80%;
     word-wrap: break-word;
+    display: inline-block;
   }
   
   .chat-bubble.user {
     background-color: #c4474b;
     color: white;
     align-self: flex-end;
-}
-
-.chat-bubble.bot {
+    margin-left: auto;
+  }
+  
+  .chat-bubble.bot {
     background-color: #e56961;
     color: white;
     align-self: flex-start;
+    margin-right: auto;
+  }
+  
+  /* Typing animation */
+  .typing {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 2px;
+    animation: blink 1.4s infinite both;
+  }
+  
+  .dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  
+  .dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 0.2;
+    }
+    50% {
+      opacity: 1;
+    }
   }
   
   /* Input and button container */
@@ -89,3 +140,40 @@
     cursor: pointer;
   }
   
+  /* Truncated message controls */
+  .read-more, .read-less {
+    background: none;
+    border: none;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 5px;
+  }
+  
+
+  .close-button {
+    position: relative;
+    width: 30px; 
+    height: 30px; 
+    cursor: pointer; /* Change cursor to pointer */
+  }
+  
+  .close-line {
+    position: absolute;
+    width: 100%;
+    height: 4px; /* Thickness of the lines */
+    background-color: white; /* Color of the lines */
+    border-radius: 50%;
+  }
+  
+  .close-line:first-child {
+    transform: rotate(45deg); /* Rotate first line */
+    top: 50%;
+    left: 0;
+  }
+  
+  .close-line:last-child {
+    transform: rotate(-45deg); /* Rotate second line */
+    top: 50%;
+    left: 0;
+  }
