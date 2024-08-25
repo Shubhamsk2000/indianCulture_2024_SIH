@@ -1,9 +1,12 @@
+import Transition from "../Transition"
 
 function Site() {
   return (
+    <Transition>
     <div className="site-info">
-      <h1></h1>   
+      <img src="/workInProgress.png" alt="work in progress" />
     </div>
+    </Transition>
   )
 }
 

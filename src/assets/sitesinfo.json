@@ -4,6 +4,12 @@
         "name": "Maharashtra",
         "cultural_sites": [
           {
+            "name": "Rajgad Fort",
+            "location": "Pune",
+            "description": "Rajgad Fort, the capital of the Maratha Empire under Chhatrapati Shivaji Maharaj for over two decades, is known for its strategic importance, stunning architecture, and panoramic views of the Sahyadri mountain range.",
+            "image": "/rajgad.jpg"
+          },
+          {
             "name": "Ajanta Caves",
             "location": "Aurangabad",
             "description": "A UNESCO World Heritage Site, the Ajanta Caves are rock-cut Buddhist cave monuments dating from the 2nd century BCE to about 480 CE.",

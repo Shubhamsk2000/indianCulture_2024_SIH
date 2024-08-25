@@ -41,8 +41,8 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                 className="state-tooltip"
                 style={{
                     display: hoveredState ? 'block' : 'none',
-                    left: cursorPosition.x - 375,
-                    top: cursorPosition.y + 20,
+                    left: cursorPosition.x - 385,
+                    top: cursorPosition.y + 15,
                 }}
             >
                 {hoveredState}

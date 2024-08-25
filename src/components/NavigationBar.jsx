@@ -45,7 +45,12 @@ const NavigationBar = () => {
       <nav className={`navbar ${showNavbar ? 'navbar-visible' : 'navbar-hidden'}`}>
         <div className='navbar-div'>
           <div className="logo">
-            <h1>MyLogo</h1>
+            <img 
+              style={{
+                width: "50px",
+               
+              }}
+            src="/logo.png" alt="" />
           </div>
           <ul className="nav-links">
             {

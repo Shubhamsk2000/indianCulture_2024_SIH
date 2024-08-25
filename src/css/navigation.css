@@ -7,7 +7,7 @@
   align-items: center;
   z-index: 10;
   width: 100%;
-  padding: 1rem 6rem;
+  padding: 0.5rem 6rem;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.6); 
   transition: all 0.5s ease;
