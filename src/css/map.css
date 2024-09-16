@@ -40,8 +40,9 @@
     width: 40%;
     height: 100%;
     z-index: 10;
-    background-color: #f0f0f0;
+    /* background-color: #f0f0f0; */
     padding: 20px;
+    padding-bottom: 4rem;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.1);
 }
 

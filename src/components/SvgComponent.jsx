@@ -60,15 +60,16 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                     scale: transformCoor.scale,
                     x: transformCoor.translateX,
                     y: transformCoor.translateY,
+            
                 }}
 
-                transition={{ duration: 0.8 }}
+                transition={{ duration: 1 , ease:"easeIn"}}
                 viewBox="0 0 1000 1000"
                 preserveAspectRatio="xMinYMin"
                 data-right-clicked-id="Ladakh_disp"
             >
 
-                <g id="Jammu_and_Kashmir_disp_group"
+                <motion.g id="Jammu_and_Kashmir_disp_group"
                 onMouseEnter={() => handleMouseEnter('Jammu and Kashmir')}
                 onMouseLeave={handleMouseLeave}
                 >
@@ -95,7 +96,7 @@ export default function SvgComponent({ selectedState, setSelectedState, transfor
                         data-original-stroke-width={1}
                     />
 
-                </g>
+                </motion.g>
 
                 onMouseEnter={() => handleMouseEnter('Uttarakhand')}
                 onMouseLeave={handleMouseLeave}

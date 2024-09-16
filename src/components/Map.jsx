@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import '../css/map.css'
 import Transition from '../Transition';
 import { motion } from 'framer-motion';
-
-
+import {menu} from '../assets/sectionMenu.json'
+import '../css/image-track.css'
 
 
 function Map() {
@@ -32,7 +32,7 @@ function Map() {
       y: 0,
       transition: {
         delay: i * 0.1,
-        duration: 0.6,
+        duration: 1,
         ease: 'easeOut',
       },
     }),
@@ -44,9 +44,12 @@ function Map() {
         {
           selectedState && (
             <>
-              <div className="sites-container">
-
-                <div className="site-list">
+              <motion.div className="sites-container"
+                 initial={{ opacity: 0, y:30 }}  
+                 animate={selectedState ? { opacity: 1, y: 0 }: { opacity: 0, y:30 }}
+              >
+                <div>
+                {/* <div className="site-list">
                   <h1>Cultural Sites in <br />{selectedState}</h1>
                   <ul>
                     {
@@ -78,9 +81,21 @@ function Map() {
                       ))
                     }
                   </ul>
+                </div> */}
                 </div>
+          <div id="image-track">
+            {
+                menu.map((item)=>(
+                  <li key={item.id} className='menu-container'>
+                    <img src={item.img} alt="img" 
+                    className='image' />
+                    <h2>{item.heading}</h2>
+                  </li>
+                ))
+            }
+          </div>
 
-              </div>
+              </motion.div>
               <div className="close-btn">
                 <button
                   onClick={() => {

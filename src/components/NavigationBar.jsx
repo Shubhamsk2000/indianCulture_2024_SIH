@@ -65,13 +65,13 @@ const NavigationBar = () => {
           </ul>
         </div>
 
-        {
+        {/* {
           location.pathname === "/map" ? 
           <div className='search-bar'>
             <input type="text" />
           </div> 
           : null
-        }
+        } */}
         {/* <ul className="nav-links">
             <li>
               <NavLink to="/">Home</NavLink>
