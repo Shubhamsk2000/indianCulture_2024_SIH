@@ -13,6 +13,8 @@
     background-color: rgba(250, 235, 215, 0.425);
     padding:1rem;
     transition: all 0.2s;
+    text-decoration: none;
+    color: black;
 }
 .menu-container:hover{
     background-color: rgba(250, 235, 215, 0.607);

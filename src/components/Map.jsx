@@ -86,7 +86,7 @@ function Map() {
           <div id="image-track">
             {
                 menu.map((item)=>(
-                  <Link to={`/cultural-site/rajgad`} key={item.id} className='menu-container'>
+                  <Link to={`/cultural-site`} key={item.id} className='menu-container'>
                     <img src={item.img} alt="img" 
                     className='image' />
                     <h2>{item.heading}</h2>

@@ -1,7 +1,9 @@
 // App.js
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
-import '../css/A.css';
+import '../css/culturalSites.css';
+import Transition from '../Transition';
+import { Link } from 'react-router-dom';
 const AnimatedCard = ({ image, title }) => {
     const cardRef = useRef(null);
     const imageRef = useRef(null);
@@ -27,14 +29,17 @@ const AnimatedCard = ({ image, title }) => {
 
     return (
         <div ref={cardRef} className="card">
+            <Link to={'/cultural-site/rajgad'}>
             <img ref={imageRef} src={image} alt={title} className="card-image" />
             <h2 ref={titleRef} className="card-title">{title}</h2>
+            </Link>
         </div>
     );
 };
 
-const App = () => {
+const CulturalSites = () => {
     return (
+        <Transition>
         <div className="app">
             <AnimatedCard
                 image="/cultural_sites/rajgad1.jpg"
@@ -56,7 +61,8 @@ const App = () => {
                 title="Shaniwar Wada"
             />
         </div>
+        </Transition>
     );
 }
 
-export default App;
+export default CulturalSites;
