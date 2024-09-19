@@ -1,0 +1,27 @@
+.s {
+    height: 200vh; /* Enough height to allow scrolling */
+    position: relative;
+  }
+  
+  #windowImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform-origin: center; /* Ensure zoom is centered */
+  }
+  
+  #sunriseImage {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed; /* Fixed position to stay aligned with window image */
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 0; /* Initially hidden */
+  }
+  

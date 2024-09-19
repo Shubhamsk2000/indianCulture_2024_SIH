@@ -1,5 +1,5 @@
 import '../css/navigation.css';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink} from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
 
@@ -13,9 +13,7 @@ const Links = [
 ];
 
 const NavigationBar = () => {
-  const location = useLocation();
 
-  console.log(location.pathname)
   const [showNavbar, setShowNavbar] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(100);
 

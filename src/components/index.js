@@ -5,7 +5,7 @@ import Site from './Site';
 import ArtStyle from './ArtStyle';
 import Button, { ButtonText } from './Button';
 import Translation from './Translation';
-
+import StateHistory from './State_culture/StateHistory';
 export default Home;
 export {
     NavigationBar,
@@ -15,5 +15,6 @@ export {
     Button,
     ButtonText,
     Translation,
+    StateHistory
     
 }

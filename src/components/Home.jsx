@@ -9,8 +9,10 @@ function Home() {
             <div className="home">
                 <div className="home-content">
                     <div className="heading">
-                        <h3>THIS IS</h3>
-                        <h1>INDIA</h1>
+                        {/* <h3>THIS IS</h3> */}
+                        
+                        <h1>अद्वितीय </h1>
+                         <h1>भारत</h1>
                     </div>
 
                     <NavLink to={"/map"}>
